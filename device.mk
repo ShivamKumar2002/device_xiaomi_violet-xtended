@@ -28,7 +28,9 @@ PRODUCT_SHIPPING_API_LEVEL := 28
 # Properties
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
-PRODUCT_CHARACTERISTICS := nosdcard
+# Platform
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_BOARD_PLATFORM := sm6150
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2340
@@ -409,7 +411,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/interfaces \
-    hardware/google/pixel
+    hardware/google/pixel \
+    hardware/qcom-caf/sm8150
 
 # Telephony
 PRODUCT_PACKAGES += \
